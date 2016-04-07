@@ -11,9 +11,9 @@ To run it:
 You can define multiple cron scripts to run with:
 
     $ docker run -d --name "script-cron" \
-	-v /path/to/my/cron/file1:/etc/cron.d/do-stuff:ro \
-	-v /path/to/my/cron/file2:/etc/cron.d/do-more-stuff:ro \
-	-v /path/to/my/cron/file3:/etc/cron.d/do-other-stuff:ro \
-	-v /path/to/scripts/and/data:/data \
-	mrskensington/script-cron
+        -v /path/to/my/cron/file1:/etc/cron.d/do-stuff:ro \
+        -v /path/to/my/cron/file2:/etc/cron.d/do-more-stuff:ro \
+        -v /path/to/my/cron/file3:/etc/cron.d/do-other-stuff:ro \
+        -v /path/to/scripts/and/data:/data \
+        mrskensington/script-cron
 
