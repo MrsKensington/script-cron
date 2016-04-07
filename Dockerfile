@@ -30,9 +30,10 @@ RUN yum -y install \
 	ruby \
 	golang
 
+RUN mkdir -p /scripts
 RUN mkdir -p /data
 
-VOLUME ["/etc/cron.d", "/data"]
+VOLUME ["/etc/cron.d", "/data", "/scripts"]
 
 
 # Run the command on container startup
