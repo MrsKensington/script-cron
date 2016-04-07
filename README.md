@@ -4,9 +4,9 @@ script-cron enables users to schedule running of scripts (written in bash, php, 
 To run it:
 
     $ docker run -d --name "script-cron" \
-	-v /path/to/my/cron/file:/etc/cron.d/do-stuff:ro \
-	-v /path/to/scripts/and/data:/data \
-	mrskensington/script-cron
+        -v /path/to/my/cron/file:/etc/cron.d/do-stuff:ro \
+        -v /path/to/scripts/and/data:/data \
+        mrskensington/script-cron
 
 You can define multiple cron scripts to run with:
 
