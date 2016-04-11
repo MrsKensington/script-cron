@@ -37,4 +37,4 @@ VOLUME ["/etc/cron.d", "/data", "/scripts"]
 
 
 # Run the command on container startup
-CMD crond
+CMD crond -n
