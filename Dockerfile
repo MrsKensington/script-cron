@@ -1,6 +1,8 @@
 FROM centos:latest
 MAINTAINER docker@mikeditum.co.uk
 
+RUN yum -y install epel-release
+
 RUN yum -y install \
 	cronie \
 	php-bcmath \
@@ -27,6 +29,10 @@ RUN yum -y install \
 	php-soap \
 	php-xml \
 	php-xmlrpc \
+	php-pecl-http \
+	php-pecl-imagick \
+	php-pecl-redis \
+	php-pecl-ssh2 \
 	ruby \
 	golang
 
