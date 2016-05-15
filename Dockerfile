@@ -34,7 +34,8 @@ RUN yum -y install \
 	php-pecl-redis \
 	php-pecl-ssh2 \
 	ruby \
-	golang
+	golang \
+	git
 
 RUN mkdir -p /scripts
 RUN mkdir -p /data
