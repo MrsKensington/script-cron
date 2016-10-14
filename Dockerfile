@@ -35,7 +35,8 @@ RUN yum -y install \
 	php-pecl-ssh2 \
 	ruby \
 	golang \
-	git
+	git \
+	nc
 
 RUN mkdir -p /scripts
 RUN mkdir -p /data
